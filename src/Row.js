@@ -17,7 +17,7 @@ const Row = ({ rowIndex, style, size, chooseMessage }) => {
       var result = 0;
       while (start <= end) {
         const { data } = await axios.post(
-          "http://172.31.12.251:4000/api/fetch",
+          "http://65.0.248.147:4000/api/fetch",
           {
             key: colIndex + start,
           },
@@ -33,7 +33,7 @@ const Row = ({ rowIndex, style, size, chooseMessage }) => {
       }
       const rowIndex = Number(end) + 1;
       const { data } = await axios.put(
-        "http://172.31.12.251:4000/api/user",
+        "http://65.0.248.147:4000/api/user",
         {
           key: colIndex + rowIndex,
           value: result,
@@ -58,7 +58,7 @@ const Row = ({ rowIndex, style, size, chooseMessage }) => {
       var result = 0;
       while (start <= end) {
         const { data } = await axios.post(
-          "http://172.31.12.251:4000/api/fetch",
+          "http://65.0.248.147:4000/api/fetch",
           {
             key: colIndex + start,
           },
@@ -79,7 +79,7 @@ const Row = ({ rowIndex, style, size, chooseMessage }) => {
       }
       const rowIndex = Number(end) + 1;
       const { data } = await axios.put(
-        "http://172.31.12.251:4000/api/user",
+        "http://65.0.248.147:4000/api/user",
         {
           key: colIndex + rowIndex,
           value: result,
@@ -103,7 +103,7 @@ const Row = ({ rowIndex, style, size, chooseMessage }) => {
       var result = 1;
       while (start <= end) {
         const { data } = await axios.post(
-          "http://172.31.12.251:4000/api/fetch",
+          "http://65.0.248.147:4000/api/fetch",
           {
             key: colIndex + start,
           },
@@ -119,7 +119,7 @@ const Row = ({ rowIndex, style, size, chooseMessage }) => {
       }
       const rowIndex = Number(end) + 1;
       const { data } = await axios.put(
-        "http://172.31.12.251:4000/api/user",
+        "http://65.0.248.147:4000/api/user",
         {
           key: colIndex + rowIndex,
           value: result,
@@ -144,7 +144,7 @@ const Row = ({ rowIndex, style, size, chooseMessage }) => {
       var count = 0;
       while (start <= end) {
         const { data } = await axios.post(
-          "http://172.31.12.251:4000/api/fetch",
+          "http://65.0.248.147:4000/api/fetch",
           {
             key: colIndex + start,
           },
@@ -162,7 +162,7 @@ const Row = ({ rowIndex, style, size, chooseMessage }) => {
       result = result / count;
       const rowIndex = Number(end) + 1;
       const { data } = await axios.put(
-        "http://172.31.12.251:4000/api/user",
+        "http://65.0.248.147:4000/api/user",
         {
           key: colIndex + rowIndex,
           value: result,
@@ -187,7 +187,7 @@ const Row = ({ rowIndex, style, size, chooseMessage }) => {
       setCol("");
       chooseMessage("All Changes Saved");
       const { data } = await axios.put(
-        "http://172.31.12.251:4000/api/user",
+        "http://65.0.248.147:4000/api/user",
         {
           key: colIndex + rowIndex,
           value: val,

@@ -13,7 +13,7 @@ function App() {
             "application/x-www-form-urlencoded; charset=UTF-8;application/json",
         },
       };
-      const { data } = await axios.delete("http://172.31.12.251:4000/api/delete", {}, config);
+      const { data } = await axios.delete("http://65.0.248.147:4000/api/delete", {}, config);
     } catch (err) {
       console.log("Error in deleting users");
     }
